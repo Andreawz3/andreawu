@@ -54,7 +54,7 @@ export default function Project() {
                 height={500}
                 alt="pixel6-frame"
               />
-              {/* <video className={styles.promoVideo} src="/videos/tinyPaws-video.mov" autoplay="autoplay" loop="loop" muted="muted"></video> */}
+              <video className={styles.promoVideo} src="/videos/tinyPaws-video.mov" autoplay="autoplay" loop="loop" muted="muted"></video>
             </div>
           </div>
         </div>
