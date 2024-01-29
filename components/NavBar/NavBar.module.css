@@ -1,0 +1,32 @@
+.container {
+  width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  font-family: var(--primary-font);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.navBarText {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+.linkText {
+  text-decoration: none;
+  color: black;
+  font-size: var(--small-font);
+  font-weight: var(--bold-font);
+}
+
+.linkText:hover {
+  cursor: pointer;
+  color: var(--color-red-chestnut);
+}

@@ -1,0 +1,24 @@
+:root {
+  --max-width: 1140px;
+
+  /* Font */
+  --primary-font: 'Nunito', sans-serif;;
+
+  /* Font size */
+  --xsmall-font: 14px;
+  --small-font: 16px;
+  --regular-font: 18px;
+  --medium-font: 24px;
+  --large-font: 30px;
+  --xlarge-font: 50px;
+
+  /* Font style */
+  --bold-font: 900;
+
+  /* Color */
+  --color-red-chestnut: #A74428;
+  --color-burnt-sienna: #F57656;
+  --color-blue-cambridge: #84A59D;
+  --color-light-gray: #6F6F6F;
+}
+

@@ -1,0 +1,65 @@
+.footer {
+  height: 400px;
+  width: 99vw;
+  margin-bottom: -10px;
+  background: url('../../public/images/footer.svg') no-repeat center center / cover;
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.contactInfo > p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: var(--xsmall-font);
+}
+
+.socialLogos {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.githubLogo, .linkedinLogo {
+  color: var(--color-red-chestnut);
+  font-size: 40px;
+  transition: transform .2s;
+}
+
+.githubLogo:hover, .linkedinLogo:hover {
+  color: var(--color-burnt-sienna);
+  transform: scale(1.2);
+}
+
+.copyrightText {
+  color: var(--color-light-gray);
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  font-size: var(--xsmall-font);
+}
+
+.rightLeaf {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+.leftLeaf {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
