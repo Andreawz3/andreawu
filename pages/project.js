@@ -26,7 +26,7 @@ export default function Project() {
             height={70}
             alt="portfolio-image"
           />
-          <h1 className={styles.subtitle}>MAIN PROJECTS</h1>
+          <h1 className={styles.subtitle}>PROJECTS</h1>
         </div>
         <div className={styles.projectsContainer}>
           {

@@ -14,9 +14,8 @@ export default function Footer() {
         />
         <div className={styles.contactInfo}>
           <p>Andrea Wu</p>
-          <p>5515 Boundary Rd. Vancouver V5R 0E3</p>
+          <p>Vancouver, BC</p>
           <p>andrea_wzh@hotmail.com</p>
-          <p>(778) 682 - 0083</p>
         </div>
         <div className={styles.socialLogos}>
           <Link  className={styles.githubLogo} href={"https://github.com/Andreawz3"}>

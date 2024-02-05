@@ -34,14 +34,35 @@
   margin: 30px 0 15px;
 }
 
+.linksContainer {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.linksSubcontainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.linksSubcontainer > p {
+  color: var(--color-light-gray);
+}
+
 .projectLink {
   text-decoration: none;
-  color: var(--color-burnt-sienna);
+  color: white;
+  background-color: var(--color-blue-cambridge);
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
 .projectLink:hover {
-  color: var(--color-red-chestnut);
-  font-weight: var(--bold-font);
+  color: var(--color-blue-cambridge);
+  background-color: white;
+  border: 2px solid var(--color-blue-cambridge);
 }
 
 .PromoContainer {

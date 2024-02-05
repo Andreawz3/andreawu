@@ -14,8 +14,6 @@ import { spurtData } from "@/data/spurtData";
 export default function Project() {
   const [ data, setData ] = useState(spurtData);
 
-  console.log(data.about[0].gitHubLink)
-
   return (
     <>
       <Header />
@@ -34,10 +32,15 @@ export default function Project() {
           {
             data && data.about.map((d, index) => {
               return (
-                <>
+                <div key={index}>
                   <p className={styles.projectDesc}>{d.info}</p>
-                  <Link className={styles.projectLink} href={`${d.gitHubLink}`}>GitHub</Link>
-                </>
+                  <div className={styles.linksContainer}>
+                    <div className={styles.linksSubcontainer}>
+                      <p>View code</p>
+                      <Link className={styles.projectLink} href={`${d.gitHubLink}`}>GitHub</Link>
+                    </div>
+                  </div>
+                </div>
               )
             })
           }

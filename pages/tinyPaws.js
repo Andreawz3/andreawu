@@ -34,7 +34,12 @@ export default function Project() {
               return (
                 <div key={index} style={{textAlign: "center"}}>
                   <p className={styles.projectDesc}>{d.info}</p>
-                  <Link className={styles.projectLink} href={`${d.websiteLink}`}>Website</Link>
+                  <div className={styles.linksContainer}>
+                    <div className={styles.linksSubcontainer}>
+                      <p>Visit</p>
+                      <Link className={styles.projectLink} href={`${d.websiteLink}`}>Website</Link>
+                    </div>
+                  </div>
                 </div>
               )
             })
