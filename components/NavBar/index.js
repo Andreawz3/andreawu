@@ -30,7 +30,7 @@ export default function NavBar() {
             <p style={{color: "var(--color-red-chestnut)"}}>Design</p> : <p>Design</p>
           }
         </Link>
-        <Link className={styles.linkText} href={"#"}>About me</Link>
+        <Link className={styles.linkText} href={"/#aboutMe"}>About me</Link>
       </div>
     </main>
   )

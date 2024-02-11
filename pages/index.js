@@ -52,7 +52,7 @@ export default function Home() {
             alt="portfolio-image"
           />
         </div>
-        <div className={styles.middleBackground}>
+        <div className={styles.middleBackground} id="aboutMe">
           <div className={styles.middleContent}>
             <Image 
               src="/images/laptop-image.png"
@@ -71,12 +71,16 @@ export default function Home() {
                 <p className={styles.subtitle}>WHAT I DO</p>
               </div>
               <p className={styles.middleDescription}>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                It has roots in a piece of classical Latin literature from 45 BC, 
-                making it over 2000 years old. Richard McClintock, a Latin professor 
-                at Hampden-Sydney College in Virginia, looked up one of the more obscure 
-                Latin words, consectetur, from a Lorem Ipsum passage, and going through 
-                the cites of the word in classical literature
+                As a web developer and designer, my primary goal is to create digital 
+                experiences that users find not only visually appealing but also intuitive 
+                and engaging to interact with. This means I'm constantly working together 
+                two distinct yet interrelated disciplines: coding and design. In the development 
+                phase, I leverage my expertise in languages like JavaScript, React, and NextJS 
+                to translate design concepts into functional websites and applications. But 
+                it's not just about functionality; it's also about how users experience and 
+                interact with the interface. That's where my role as a designer comes in, 
+                blending technical expertise with creative vision. It's a constant balancing 
+                act between code and design, logic, and creativity
               </p>
             </div>
           </div>
