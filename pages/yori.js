@@ -40,8 +40,8 @@ export default function Project() {
                       <Link className={styles.projectLink} href={`${d.gitHubLink}`}>GitHub</Link>
                     </div>
                     <div className={styles.linksSubcontainer}>
-                      <p>Visit</p>
-                      <Link className={styles.projectLink} href={`${d.websiteLink}`}>Website</Link>
+                      <p>View</p>
+                      <Link className={styles.projectLink} href={`${d.websiteLink}`}>App</Link>
                     </div>
                   </div>
                 </div>

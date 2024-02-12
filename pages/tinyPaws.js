@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 // Data
 import { tinyPawsData } from "@/data/tinyPawsData";
 
-export default function Project() {
+export default function TinyPaws() {
   const [ data, setData ] = useState(tinyPawsData);
 
   return (
