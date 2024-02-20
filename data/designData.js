@@ -10,7 +10,7 @@ export const DesignData = [
     item: "itemTwo"
   },
   {
-    title: "Desig Beverage Can Label",
+    title: "Design Beverage Can Label",
     image: "/images/design/img03.png",
     item: "itemThree"
   },

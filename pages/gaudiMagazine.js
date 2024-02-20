@@ -30,7 +30,7 @@ export default function GaudiMagazine() {
             each masterpiece is a testament to Gaudí's boundless imagination and profound 
             understanding of architectural principles. As readers immerse themselves in 
             the pages of the magazine, they are not merely spectators but explorers, 
-            delving into the intricate details and profound symbolism imbued within each structure
+            delving into the intricate details and profound symbolism imbued within each structure.
           </p>
           <div className={styles.imagesDisplay}>
             <Image 

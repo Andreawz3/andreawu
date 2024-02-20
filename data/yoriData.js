@@ -1,15 +1,15 @@
 export const yoriData = {
   about: [
     {
-      info: "An innovative mobile web application cookbook designed to elevate your culinary experience. Dig into a world of wholesome, delicious meals meticulously curated to promote health and affordability. With its enchanting interactive features tailored for children, Yori transcends a simple recipe collection, serving as a captivating platform for families to immerse their young ones in the art of cooking",
+      info: "An innovative mobile web application cookbook designed to elevate your culinary experience. Dig into a world of wholesome, delicious meals meticulously curated to promote health and affordability. With its enchanting interactive features tailored for children, Yori transcends a simple recipe collection, serving as a captivating platform for families to immerse their young ones in the art of cooking.",
       gitHubLink: "https://github.com/Andreawz3/dynamic-content-design-project",
       websiteLink: "https://yori-nutritional-foods.vercel.app"
     }
   ],
   overview: [
     {
-      problem: "Malnutrition among children poses a significant threat to their overall development, affecting not only their physical health but also their cognitive abilities. When children lack essential nutrients due to inadequate diet or poor access to nutritious food, their growth may be stunted, leading to issues such as underweight or delayed development of muscles and bones",
-      solution: "The app has easy-to-follow recipes featuring nutritious ingredients. These recipes should be tailored to children's tastes and preferences,  on simplicity and affordability, and include step-by-step instructions. The app is accessible to children of all ages and abilities. Design an intuitive user interface with large, clear buttons and text for easy navigation"
+      problem: "Malnutrition among children poses a significant threat to their overall development, affecting not only their physical health but also their cognitive abilities. When children lack essential nutrients due to inadequate diet or poor access to nutritious food, their growth may be stunted, leading to issues such as underweight or delayed development of muscles and bones.",
+      solution: "The app has easy-to-follow recipes featuring nutritious ingredients. These recipes should be tailored to children's tastes and preferences,  on simplicity and affordability, and include step-by-step instructions. The app is accessible to children of all ages and abilities. Design an intuitive user interface with large, clear buttons and text for easy navigation."
     }
   ],
   tool: [

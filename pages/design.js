@@ -35,7 +35,7 @@ export default function Project() {
             such as packing essentials, trail safety, and navigation basics
           </p>
           <div className={styles.linksSubcontainer}>
-            <p>View video</p>
+            <p>Watch video</p>
             <Link className={styles.projectLink} href="https://youtu.be/WzCv9zlh8hM" target="_blank">YouTube</Link>
           </div>
         </div>

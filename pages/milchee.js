@@ -8,12 +8,8 @@ import Header from "@/components/Header";
 import NavBar from "@/components/NavBar"
 import Footer from "@/components/Footer";
 
-// Data
-import { nyumNyumData } from "@/data/nyumnyum"; 
 
 export default function Milchee() {
-  const [ data, setData ] = useState(nyumNyumData);
-
   return (
     <>
       <Header />
@@ -30,12 +26,11 @@ export default function Milchee() {
             <h1 className={styles.title}>Milchee</h1>
           </div>
           <p className={styles.description}>
-            From the organic forms of the iconic Sagrada Família to the eccentric 
-            curves of Casa Batlló and the intricate mosaic patterns of Park Güell, 
-            each masterpiece is a testament to Gaudí's boundless imagination and 
-            profound understanding of architectural principles. As readers immerse 
-            themselves in the pages of the magazine, they are not merely spectators 
-            but explorers, delving into the intricate details and profound symbolism imbued within each structure
+            Crafted with the playful imagination of Illustrator, the can design 
+            for the strawberry, banana, and chocolate milky drink for kids is 
+            a delightful fusion of vibrant colours and whimsical elements. Each 
+            flavour is represented by its distinct visual mascot, with strawberries, 
+            bananas, and chocolate swirls dancing across the can's surface.
           </p>
           <div className={styles.imagesDisplay}>
             <Image 
@@ -79,6 +74,7 @@ export default function Milchee() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   )
 }
