@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 // Data
 import { nyumNyumData } from "@/data/nyumnyum"; 
 
-export default function TinyPaws() {
+export default function Milchee() {
   const [ data, setData ] = useState(nyumNyumData);
 
   return (
@@ -19,7 +19,7 @@ export default function TinyPaws() {
       <Header />
       <main className={styles.main}>
         <NavBar />
-        <h1>Nyum Nyum</h1>
+        <h1>Coming Soon</h1>
       </main>
     </>
   )

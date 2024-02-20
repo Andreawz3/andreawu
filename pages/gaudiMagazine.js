@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 // Data
 import { tinyPawsData } from "@/data/tinyPawsData";
 
-export default function TinyPaws() {
+export default function GaudiMagazine() {
   const [ data, setData ] = useState(tinyPawsData);
 
   return (
@@ -27,7 +27,7 @@ export default function TinyPaws() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.title}>TinyPaws</h1>
+            <h1 className={styles.title}>Gaudí’s Masterpieces</h1>
           </div>
           {
             data && data.about.map((d, index) => {

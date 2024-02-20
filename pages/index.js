@@ -38,11 +38,11 @@ export default function Home() {
                 alt="leaf"
               />
             </div>
-            <p className={styles.jobTitle}>web developer & uxui designer</p>
+            <p className={styles.jobTitle}>web developer & ux-ui designer</p>
             <p className={styles.jobDescription}>
               I'm an open-minded and fast-learning web developer. I've designed 
               and created interactive web apps and pages also created realistic 
-              drawings and Vector 3D artwork using Adobe Illustrator tools
+              drawings and Vector 3D artwork using Adobe Illustrator tools.
             </p>
           </div>
           <Image 
@@ -80,7 +80,7 @@ export default function Home() {
                 it's not just about functionality; it's also about how users experience and 
                 interact with the interface. That's where my role as a designer comes in, 
                 blending technical expertise with creative vision. It's a constant balancing 
-                act between code and design, logic, and creativity
+                act between code and design, logic, and creativity.
               </p>
             </div>
           </div>
