@@ -75,7 +75,7 @@ export default function Project() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.title}>PROJECT OVERVIEW</h1>
+            <h1 className={styles.title}>Project Overview</h1>
           </div>
           { 
             data && data.overview.map((d, index) => {
@@ -102,7 +102,24 @@ export default function Project() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.title}>DESIGN PROCESS</h1>
+            <h1 className={styles.title}>User Persona</h1>
+          </div>
+          <Image 
+            src='/images/user-persona.png'
+            width={1070}
+            height={625}
+            alt="user-persona"
+          />
+        </div>
+        <div className={styles.subContainer}>
+          <div className={styles.subContainerTitle}>
+            <Image 
+              src="/images/leaf-left.png"
+              width={70}
+              height={70}
+              alt="portfolio-image"
+            />
+            <h1 className={styles.title}>Design Process</h1>
           </div>
           <div className={styles.designProcessInfo}>
             <Image 
@@ -144,8 +161,8 @@ export default function Project() {
               <div>
                 <p style={{fontSize: "var(--medium-font)"}}>Project Duration</p>
                 <div style={{display: "flex", gap: "70px"}}>
-                  <p className={styles.projectDurationText}><span>10</span>weeks</p>
-                  <p className={styles.projectDurationText}><span>20+</span>screen</p>
+                  <p className={styles.projectDurationText}>TIME<span>10</span>weeks</p>
+                  <p className={styles.projectDurationText}>RESULT OF<span>20+</span>screen</p>
                 </div>
               </div>
               <div>
@@ -179,7 +196,7 @@ export default function Project() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.title}>SKETCHES</h1>
+            <h1 className={styles.title}>Sketches</h1>
           </div>
           <div className={styles.sketchesContainer}>
             {
@@ -207,22 +224,33 @@ export default function Project() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.title}>STYLE GUIDE & BRANDING</h1>
+            <h1 className={styles.title}>Style Guide & Branding</h1>
           </div>
           <div className={styles.brandingContainer}>
-            <div style={{marginBottom: "20px"}}>
-              <p className={styles.logo}>Logo</p>
-              <Image 
-                src="/images/yori/logo.png"
-                width={475}
-                height={148}
-                alt="portfolio-image"
-              />
-            </div>
+            <p className={styles.logo}>Logo</p>
+            <p className={styles.logoDesc}>
+              Leaf-heart symbol - this icon is to portray a vibrant mood and the subtle 
+              heart shape with the leaf is to showcase our app promoting healthy lifestyle. 
+              Yori (요리) meaning “to cook” in Korean language. Warm, peach undertone red for 
+              the word-mark - as this color associates with movement and excitement to encourage appetite
+            </p>
+            <Image 
+              className={styles.logoImg}
+              src="/images/yori/logo.png"
+              width={475}
+              height={148}
+              alt="portfolio-image"
+            />
           </div>
           <hr className={styles.horizontalLine}/>
           <div  className={styles.colorContainer}>
-            <p className={styles.logo}>Color Palette</p>
+            <p className={styles.colorPalette}>Color Palette</p>
+            <p className={styles.colorPaletteDesc}>
+              It aims to create a visually stimulating and engaging environment that resonates with 
+              children's senses while promoting a sense of excitement and creativity. This diverse 
+              colours create a visually appealing and harmonious design scheme that captivates 
+              young users and inspires them to embark on a colourful culinary journey
+            </p>
             <div className={styles.colorDisplay}>
               {
                 data && data.color.map((d, i) => {
@@ -230,7 +258,6 @@ export default function Project() {
                     <div key={i} className={styles.colorInfo}>
                       <div className={styles.color} style={{backgroundColor:`${d.color}`}}></div>
                       <p style={{margin: "10px 0 0 0", fontSize: "var(--xsmall-font)"}}>{d.color}</p>
-                      <p style={{margin: 0, fontSize: "var(--xsmall-font)"}}>{d.name}</p>
                     </div>
                   )
                 })
@@ -239,7 +266,14 @@ export default function Project() {
           </div>
           <hr className={styles.horizontalLine}/>
           <div  className={styles.typoContainer}>
-            <p className={styles.logo}>Typography</p>
+            <p className={styles.typography}>Typography</p>
+            <p className={styles.typographyDesc}>
+              Capuche and Lato's fonts offer a balanced and visually engaging typographic experience. 
+              Capuche's playful and peculiar style adds a touch of fun and creativity to the titles, 
+              capturing the attention of young users and inviting them to explore the recipes. Lato's 
+              clean and modern sans-serif design provides excellent readability and clarity for the body 
+              text, ensuring that users can easily follow the instructions and ingredient lists without distraction
+            </p>
             <div style={{display: "flex", gap: "100px", marginBottom: "60px"}}>
               <div>
                 <p className={styles.typoTitle}>Title Header</p>
