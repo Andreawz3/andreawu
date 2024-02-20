@@ -102,8 +102,6 @@
 
 .subContainerTitle {
   display: flex;
-  align-items: end;
-  gap: 15px;
   margin-bottom: 50px;
 }
 

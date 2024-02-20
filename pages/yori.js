@@ -37,11 +37,11 @@ export default function Project() {
                   <div className={styles.linksContainer}>
                     <div className={styles.linksSubcontainer}>
                       <p>View code</p>
-                      <Link className={styles.projectLink} href={`${d.gitHubLink}`}>GitHub</Link>
+                      <Link className={styles.projectLink} href={`${d.gitHubLink}`} target="_blank">GitHub</Link>
                     </div>
                     <div className={styles.linksSubcontainer}>
                       <p>View</p>
-                      <Link className={styles.projectLink} href={`${d.websiteLink}`}>App</Link>
+                      <Link className={styles.projectLink} href={`${d.websiteLink}`} target="_blank">App</Link>
                     </div>
                   </div>
                 </div>
@@ -69,12 +69,6 @@ export default function Project() {
         </div>
         <div className={styles.subContainer}>
           <div className={styles.subContainerTitle}>
-            <Image 
-              src="/images/leaf-left.png"
-              width={70}
-              height={70}
-              alt="portfolio-image"
-            />
             <h1 className={styles.title}>Project Overview</h1>
           </div>
           { 
@@ -96,12 +90,6 @@ export default function Project() {
         </div>
         <div className={styles.subContainer}>
           <div className={styles.subContainerTitle}>
-            <Image 
-              src="/images/leaf-left.png"
-              width={70}
-              height={70}
-              alt="portfolio-image"
-            />
             <h1 className={styles.title}>User Persona</h1>
           </div>
           <Image 
@@ -113,12 +101,6 @@ export default function Project() {
         </div>
         <div className={styles.subContainer}>
           <div className={styles.subContainerTitle}>
-            <Image 
-              src="/images/leaf-left.png"
-              width={70}
-              height={70}
-              alt="portfolio-image"
-            />
             <h1 className={styles.title}>Design Process</h1>
           </div>
           <div className={styles.designProcessInfo}>
@@ -190,12 +172,6 @@ export default function Project() {
         </div>
         <div className={styles.subContainer}>
           <div className={styles.subContainerTitle}>
-            <Image 
-              src="/images/leaf-left.png"
-              width={70}
-              height={70}
-              alt="portfolio-image"
-            />
             <h1 className={styles.title}>Sketches</h1>
           </div>
           <div className={styles.sketchesContainer}>
@@ -218,12 +194,6 @@ export default function Project() {
         </div>
         <div className={styles.subContainer}>
           <div className={styles.subContainerTitle}>
-            <Image 
-              src="/images/leaf-left.png"
-              width={70}
-              height={70}
-              alt="portfolio-image"
-            />
             <h1 className={styles.title}>Style Guide & Branding</h1>
           </div>
           <div className={styles.brandingContainer}>

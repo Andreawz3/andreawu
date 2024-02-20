@@ -37,7 +37,7 @@ export default function Project() {
                   <div className={styles.linksContainer}>
                     <div className={styles.linksSubcontainer}>
                       <p>View code</p>
-                      <Link className={styles.projectLink} href={`${d.gitHubLink}`}>GitHub</Link>
+                      <Link className={styles.projectLink} href={`${d.gitHubLink}`} target="_blank">GitHub</Link>
                     </div>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function Project() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.title}>MAIN FEATURES</h1>
+            <h1 className={styles.title}>Main Features</h1>
           </div>
           <div className={styles.featuresContainer}>
             {
@@ -100,7 +100,7 @@ export default function Project() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.title}>VALUES</h1>
+            <h1 className={styles.title}>Value</h1>
           </div>
           <div  className={styles.valuesContainer}>
             {

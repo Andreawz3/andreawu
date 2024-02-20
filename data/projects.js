@@ -17,7 +17,7 @@ export const projects = [
     name: "Gaudí’s Masterpieces",
     job: "Designer",
     description: "In a captivating display of architectural mastery, the magazine showcases the inspiring works of Antoni Gaudí, celebrated as one of history's most innovative and visionary architects. With an unparalleled blend of creativity, ingenuity, and reverence for nature",
-    image: "/images/gaudi/magazine01.jpg",
+    image: "/images/gaudi/magazine03.jpg",
     url: "gaudiMagazine"
   },
   {

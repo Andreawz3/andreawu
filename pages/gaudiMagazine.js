@@ -1,18 +1,13 @@
 import Image from "next/image";
-import Link from 'next/link';
-import styles from "@/styles/TinyPaws.module.css";
-import { useState } from "react";
+import styles from "@/styles/GaudiM.module.css";
 
 // Components
 import Header from "@/components/Header"
 import NavBar from "@/components/NavBar"
 import Footer from "@/components/Footer";
 
-// Data
-import { tinyPawsData } from "@/data/tinyPawsData";
 
 export default function GaudiMagazine() {
-  const [ data, setData ] = useState(tinyPawsData);
 
   return (
     <>
@@ -29,98 +24,41 @@ export default function GaudiMagazine() {
             />
             <h1 className={styles.title}>Gaudí’s Masterpieces</h1>
           </div>
-          {
-            data && data.about.map((d, index) => {
-              return (
-                <div key={index} style={{textAlign: "center"}}>
-                  <p className={styles.projectDesc}>{d.info}</p>
-                  <div className={styles.linksContainer}>
-                    <div className={styles.linksSubcontainer}>
-                      <p>Visit</p>
-                      <Link className={styles.projectLink} href={`${d.websiteLink}`}>Website</Link>
-                    </div>
-                  </div>
-                </div>
-              )
-            })
-          }
-          <div className={styles.PromoContainer}>
+          <p className={styles.description}>
+            From the organic forms of the iconic Sagrada Família to the eccentric 
+            curves of Casa Batlló and the intricate mosaic patterns of Park Güell, 
+            each masterpiece is a testament to Gaudí's boundless imagination and profound 
+            understanding of architectural principles. As readers immerse themselves in 
+            the pages of the magazine, they are not merely spectators but explorers, 
+            delving into the intricate details and profound symbolism imbued within each structure
+          </p>
+          <div className={styles.imagesDisplay}>
             <Image 
-              className={styles.promoBackground}
-              src="/images/tinyPaws/background.png"
-              width={1115}
-              height={656}
-              alt="tinyPaws-background"
+              src="/images/gaudi/magazine01.jpg"
+              width={1000}
+              height={667}
+              alt="magazine-cover"
             />
-            <div className={styles.promoVideoContainer}>
+            <div style={{display: "flex", gap: "50px"}}>
               <Image 
-                src="/images/tinyPaws/laptop-frame.png"
-                width={835}
-                height={500}
-                alt="pixel6-frame"
+                src="/images/gaudi/magazine05.jpg"
+                width={555}
+                height={370}
+                alt="magazine-cover"
               />
-              <video className={styles.promoVideo} src="/videos/tinyPaws-video.mov" autoplay="autoplay" loop="loop" muted="muted"></video>
+                <Image 
+                src="/images/gaudi/magazine04.jpg"
+                width={555}
+                height={370}
+                alt="magazine-cover"
+              />
             </div>
-          </div>
-        </div>
-        <div className={styles.subContainer}>
-          <div className={styles.subContainerTitle}>
             <Image 
-              src="/images/leaf-left.png"
-              width={70}
-              height={70}
-              alt="portfolio-image"
+              src="/images/gaudi/magazine02.jpg"
+              width={1000}
+              height={667}
+              alt="magazine-cover"
             />
-            <h1 className={styles.title}>MAIN FEATURES</h1>
-          </div>
-          <div className={styles.featuresContainer}>
-            {
-              data && data.features.map((d, index) => {
-                return (
-                  <div key={index} className={styles.featureDesc}>
-                    <Image 
-                      src={d.image}
-                      width={450}
-                      height={325}
-                      alt={d.title}  
-                    />
-                    <p className={styles.featureTitle}>{d.title}</p>
-                    <p className={styles.featureDesc}>{d.description}</p>
-                  </div>
-                )
-              })
-            }
-          </div>
-        </div>
-        <div className={styles.thirdContainer}>
-          <div className={styles.subContainerTitle}>
-            <Image 
-              src="/images/leaf-left.png"
-              width={70}
-              height={70}
-              alt="portfolio-image"
-            />
-            <h1 className={styles.title}>VALUES</h1>
-          </div>
-          <div  className={styles.valuesContainer}>
-            {
-              data && data.values.map((d, index) => {
-                return (
-                  <div key={index} className={styles.valuesInfoContainer} style={{marginBottom: "130px"}}>
-                    <div className={styles.valuesTitleContainer}>
-                      <Image 
-                        src="/images/red-leaf.png"
-                        width={70}
-                        height={70}
-                        alt="red-leaf"
-                      />
-                      <p className={styles.valuesTitle}>{d.title}</p>
-                    </div>
-                    <p className={styles.valuesDesc}>{d.description}</p>
-                  </div>
-                )
-              })
-            }
           </div>
         </div>
         <Footer />

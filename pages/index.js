@@ -100,7 +100,7 @@ export default function Home() {
               data && data.map((d, index) => {
                 return (
                   <div key={index} className={styles.skillLink}>
-                    <Link href={d.url}>
+                    <Link href={d.url} target="_blank">
                       <Image 
                         className={styles.skillImage}
                         src={d.image}

@@ -1,5 +1,6 @@
 import styles from "@/styles/Design.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 // Components
@@ -26,13 +27,17 @@ export default function Project() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.subtitle}>AFTER EFFECTS</h1>
+            <h1 className={styles.subtitle}>MOTION GRAPHICS</h1>
           </div>
           <p style={{width: "760px", textAlign: "center", margincontainer: "30px"}}>
             Create an engaging beginner hiking tips video using After Effects, 
             featuring animated graphics and transitions to illustrate key points 
             such as packing essentials, trail safety, and navigation basics
           </p>
+          <div className={styles.linksSubcontainer}>
+            <p>View video</p>
+            <Link className={styles.projectLink} href="https://youtu.be/WzCv9zlh8hM" target="_blank">YouTube</Link>
+          </div>
         </div>
         <div className={styles.promoVideoContainer}>
           <Image 
@@ -51,7 +56,7 @@ export default function Project() {
               height={70}
               alt="portfolio-image"
             />
-            <h1 className={styles.subtitle}>PHOTOSHOP & ILLUSTRATOR</h1>
+            <h1 className={styles.subtitle}>GRAPHICS DESIGN</h1>
           </div>
           <div className={styles.designContainer}>
             {

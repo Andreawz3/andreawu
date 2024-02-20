@@ -21,7 +21,7 @@ export default function NavBar() {
         <Link className={styles.linkText} href={'/project'}>
           {
             router.pathname == '/project' ? 
-            <p style={{color: "var(--color-red-chestnut)"}}>Project</p> : <p>Project</p>
+            <p style={{color: "var(--color-red-chestnut)"}}>Projects</p> : <p>Projects</p>
           }
         </Link>
         <Link className={styles.linkText} href={'/design'}>

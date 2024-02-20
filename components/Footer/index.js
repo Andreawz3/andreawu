@@ -18,10 +18,10 @@ export default function Footer() {
           <p>andrea_wzh@hotmail.com</p>
         </div>
         <div className={styles.socialLogos}>
-          <Link  className={styles.githubLogo} href={"https://github.com/Andreawz3"}>
+          <Link  className={styles.githubLogo} href={"https://github.com/Andreawz3"} target="_blank">
             <i class="fa fa-github"></i>
           </Link>
-          <Link className={styles.linkedinLogo} href={"https://www.linkedin.com/in/andreawzh/"}>
+          <Link className={styles.linkedinLogo} href={"https://www.linkedin.com/in/andreawzh/"} target="_blank">
             <i class="fa fa-linkedin-square"></i>
           </Link>
         </div>
