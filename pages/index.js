@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 import styles from "@/styles/Home.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Components
 import Header from "@/components/Header";
@@ -13,6 +13,30 @@ import { skills } from "@/data/skills";
 
 export default function Home() {
   const [data, setData] = useState([...skills]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const isBrowser = () => typeof window !== 'undefined'; 
+
+  function scrollToTop() {
+      if (!isBrowser()) return;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   return (
     <>
@@ -115,6 +139,11 @@ export default function Home() {
               })
             }
           </div>
+        </div>
+        <div className={styles.upBtnContainer}>
+          <button id={styles.upBtn} className={`... scrollToTopButton ${isVisible ? 'visible' : ''}`} onClick={scrollToTop} >
+            <i class="fa fa-arrow-up"></i>
+          </button>
         </div>
         <Footer />
       </main>

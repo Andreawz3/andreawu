@@ -12,7 +12,8 @@ import { DesignData } from "@/data/designData";
 import Footer from "@/components/Footer";
 
 export default function Project() {
-  const [data, setData] = useState(DesignData);
+  const [hover, setHover] = useState(false);
+  const [secondHover, setSecondHover] = useState(false);
 
   return (
     <>
@@ -59,21 +60,56 @@ export default function Project() {
             <h1 className={styles.subtitle}>GRAPHICS DESIGN</h1>
           </div>
           <div className={styles.designContainer}>
-            {
-              data && data.map((d, i) => {
-                return (
-                  <div key={i} className={styles.designImage}>
-                    <Image 
-                      src={d.image}
-                      width={525}
-                      height={675}
-                      alt={d.title}
-                    />
-                    <p className={styles.designTitle}>{d.title}</p>
-                  </div>
+            <div
+              style={{ width: 325, height: 450 }}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+            >
+              {
+                hover ? (
+                  <Image
+                    className={styles.designImage} 
+                    src="/images/design/img01-2.jpg"
+                    width={325}
+                    height={450}
+                    alt="poster-design01"
+                  />
+                ) : (
+                  <Image
+                  className={styles.designImage} 
+                  src="/images/design/img01.jpg"
+                  width={325}
+                  height={450}
+                  alt="poster-design01"
+                />
                 )
-              })
-            }
+              }
+            </div>
+            <div
+              style={{ width: 325, height: 450 }}
+              onMouseEnter={() => setSecondHover(true)}
+              onMouseLeave={() => setSecondHover(false)}
+            >
+              {
+                secondHover ? (
+                  <Image
+                    className={styles.designImage} 
+                    src="/images/design/img02-2.jpg"
+                    width={325}
+                    height={450}
+                    alt="poster-design02"
+                  />
+                ) : (
+                  <Image
+                  className={styles.designImage} 
+                  src="/images/design/img02.jpg"
+                  width={325}
+                  height={450}
+                  alt="poster-design02"
+                />
+                )
+              }
+            </div>
           </div>
         </div>
         <Footer />

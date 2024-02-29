@@ -43,11 +43,13 @@
 .linksSubcontainer {
   display: flex;
   align-items: center;
-  gap: 8px;
 }
 
 .linksSubcontainer > p {
   color: var(--color-light-gray);
+  border: 1px solid var(--color-blue-cambridge);
+  padding: 7px;
+  margin: -1px;
 }
 
 .projectLink {
@@ -55,14 +57,14 @@
   color: white;
   background-color: var(--color-blue-cambridge);
   padding: 8px 10px;
-  border-radius: 10px;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .projectLink:hover {
   color: var(--color-blue-cambridge);
   background-color: white;
-  border: 2px solid var(--color-blue-cambridge);
+  padding: 7px 10px;
+  border: 1px solid var(--color-blue-cambridge);
 }
 
 .PromoContainer {

@@ -22,3 +22,7 @@
   --color-light-gray: #6F6F6F;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+

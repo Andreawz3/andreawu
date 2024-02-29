@@ -131,3 +131,33 @@
 .skillLink:hover .tooltiptext {
   visibility: visible;
 }
+
+.scrollToTopButton {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scrollToTopButton.visible {
+  opacity: 1;
+}
+
+#upBtn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: var(--color-red-chestnut);
+  cursor: pointer;
+}
+
+#upBtn:hover {
+  color: var(--color-blue-cambridge);
+}
+
+.upBtnContainer {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+}
