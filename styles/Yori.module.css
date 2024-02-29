@@ -242,12 +242,17 @@
   background: none;
   border: none;
   font-size: 30px;
-  color: var(--color-red-chestnut);
+  color: var(--color-blue-cambridge);
   cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 30px;
+  border: 2px solid var(--color-blue-cambridge);
+  box-shadow: 5px 5px 12px var(--color-blue-cambridge);
+  transition: transform .2s;
 }
 
 #upBtn:hover {
-  color: var(--color-blue-cambridge);
+  transform: scale(1.1);
 }
 
 .upBtnContainer {
