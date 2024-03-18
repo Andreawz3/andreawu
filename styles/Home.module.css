@@ -7,7 +7,18 @@
   align-items: center;
 }
 
-/* Top Part */
+.container {
+  background-color: #f7e5e078;
+  width: 100%;
+  height: 83vh;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .topInfo {
   display: flex;
   width: 100%;
@@ -15,7 +26,6 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 100px;
-  margin-top: 24px;
 }
 
 .greetingMsg {
@@ -24,145 +34,31 @@
 }
 
 .greetingText {
+  font-size: 34px;
+  font-weight: var(--bold-font);
+  color: black;
+  margin: 0;
+}
+
+.name {
   font-size: var(--xlarge-font);
   font-weight: var(--bold-font);
-  color: var(--color-red-chestnut);
-  margin: 0;
+  color: black;
+  margin: -10px 0;
 }
 
 .jobTitle {
-  font-size: var(--large-font);
+  font-size: 26px;
   font-weight: var(--bold-font);
-  margin: 16px 0;
-  color: var(--color-blue-cambridge);
+  margin: 8px 0;
+  color: var(--color-light-gray);
+}
+
+.jobTitle > span {
+  color: var(--color-burnt-sienna);
 }
 
 .jobDescription {
-  width: 430px;
-}
-
-/* Middle Part */
-.middleBackground {
-  height: 1000px;
-  width: 99vw;
-  background: url('../public/images/background.svg') no-repeat center center / cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.middleContent {
-  max-width: var(--max-width);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 100px;
-}
-
-.middleDescription {
-  width: 550px;
-}
-
-.subtitleContainer {
-  display: flex;
-  align-items: end;
-  gap: 15px;
-}
-
-.subtitle {
   margin: 0;
-  font-weight: var(--bold-font);
-  font-size: var(--large-font);
-  border-bottom: 5px solid var(--color-blue-cambridge);
-  color: var(--color-red-chestnut);
-}
-
-.lastSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  margin: 100px 0;
-}
-
-.skillsContainer {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  grid-column-gap: 50px;
-  column-gap: 60px;
-  row-gap: 50px;
-}
-
-.skillLink {
-  transition: transform .2s;
-}
-
-.skillLink:hover {
-  transform: scale(1.1);
-}
-
-.skillImage {
-  border: 3px solid #ffffff05;
-}
-
-.skillImage:hover {
-  border: 3px solid #f5765680;
-  border-radius: 10px;
-}
-
-.tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: var(--color-blue-cambridge);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.skillLink:hover .tooltiptext {
-  visibility: visible;
-}
-
-.scrollToTopButton {
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.scrollToTopButton.visible {
-  opacity: 1;
-}
-
-#upBtn {
-  background: none;
-  border: none;
-  font-size: 30px;
-  color: var(--color-blue-cambridge);
-  cursor: pointer;
-  padding: 6px 10px;
-  border-radius: 30px;
-  border: 2px solid var(--color-blue-cambridge);
-  box-shadow: 5px 5px 12px var(--color-blue-cambridge);
-  transition: transform .2s;
-}
-
-#upBtn:hover {
-  transform: scale(1.1);
-}
-
-.upBtnContainer {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  margin-bottom: 30px;
+  width: 430px;
 }

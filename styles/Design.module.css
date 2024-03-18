@@ -23,7 +23,7 @@
   margin: 0;
   font-weight: var(--bold-font);
   font-size: var(--large-font);
-  border-bottom: 5px solid var(--color-blue-cambridge);
+  /* border-bottom: 5px solid var(--color-blue-cambridge); */
   color: var(--color-red-chestnut);
 }
 

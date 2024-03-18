@@ -8,52 +8,70 @@
 }
 
 .subtitleContainer {
+  background-color: #f7e5e078;
+  width: 100%;
+  height: 775px;
+  margin-top: 10px;
+  padding-top: 10px;
   display: flex;
-  align-items: end;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitleContainer > p {
+  font-size: 24px;
+  width: 400px;
+  text-align: center;
 }
 
 .subtitle {
   margin: 0;
   font-weight: var(--bold-font);
   font-size: var(--large-font);
-  border-bottom: 5px solid var(--color-blue-cambridge);
-  color: var(--color-red-chestnut);
+  color: black
 }
 
 .projectsContainer {
-  margin: 100px 0;
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 400px 400px;
   grid-column-gap: 80px;
-  row-gap: 60px;
+  row-gap: 40px;
 }
+
+.projectsInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 100%, 0);
+  border-radius: 5px;
+}
+
+.projectsInfo:hover {
+  box-shadow: 5px 10px 18px #afafaf;
+}
+
 
 .projectName {
-  text-decoration: none;
-  font-size: var(--medium-font);
-  color: var(--color-red-chestnut);
-}
-
-.projectName:hover {
-  color: var(--color-blue-cambridge);
-  font-weight: var(--bold-font);
-}
-
-.projectName:hover > span {
+  margin: 10px 0 0;
   color: black;
-  font-weight: var(--bold-font);
+  font-size: 18px;
 }
 
 .jobTitle {
-  font-size: 20px;
-  color: var(--color-blue-cambridge)
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-burnt-sienna);
 }
 
 .projectDesc {
+  color: black;
   font-size: 14px;
-  width: 450px;
-  text-align: justify;
+  width: 360px;
+  text-align: center;
+  margin: 5px 0;
 }
 
 .projectImage {

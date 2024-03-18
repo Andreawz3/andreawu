@@ -17,14 +17,14 @@ export const projects = [
     name: "Gaudí’s Masterpieces",
     job: "Designer",
     description: "In a captivating display of architectural mastery, the magazine showcases the inspiring works of Antoni Gaudí, celebrated as one of history's most innovative and visionary architects. With an unparalleled blend of creativity, ingenuity, and reverence for nature.",
-    image: "/images/gaudi/magazine03.jpg",
+    image: "/images/gaudi.png",
     url: "gaudiMagazine"
   },
   {
     name: "Milchee",
     job: "Designer",
     description: "The design embodies a harmonious fusion of vibrancy and sophistication, captivating consumers with its alluring aesthetic. The luscious imagery of fruits and creamy textures evokes a sensory delight, enticing consumers to savor the rich, creamy goodness.",
-    image: "/images/milchee/can01.jpg",
+    image: "/images/milchee.png",
     url: "milchee"
   },
 ]

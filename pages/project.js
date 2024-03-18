@@ -5,8 +5,7 @@ import { useState } from "react";
 
 // Components
 import Header from "@/components/Header"
-import NavBar from "@/components/NavBar"
-import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 
 // Data
 import { projects } from "@/data/projects";
@@ -20,40 +19,29 @@ export default function Project() {
       <main className={styles.main}>
         <NavBar />
         <div className={styles.subtitleContainer}>
-          <Image 
-            src="/images/leaf-left.png"
-            width={70}
-            height={70}
-            alt="portfolio-image"
-          />
-          <h1 className={styles.subtitle}>PROJECTS</h1>
-        </div>
-        <div className={styles.projectsContainer}>
-          {
-            data && data.map((d, index) => {
-              return (
-                <div key={index}>
-                  <Link href={`/${d.url}`} className={styles.projectName}>
-                    {d.name}
-                    <span style={{color: "var(--color-blue-cambridge)"}}> | </span>
-                    <span className={styles.jobTitle}>{d.job}</span>
-                  </Link>
-                  <p className={styles.projectDesc}>{d.description}</p>
-                  <Link href={`/${d.url}`}>
-                    <Image 
-                      className={styles.projectImage}                  
+          <p>
+            Check out my latest projects and see what I've been working on!
+          </p>
+          <div className={styles.projectsContainer}>
+            {
+              data && data.map((d, index) => {
+                return (
+                  <Link href={`/${d.url}`} className={styles.projectsInfo}>
+                    <Image          
                       src={d.image}
-                      width={450}
-                      height={350}
+                      width={100}
+                      height={100}
                       alt={d.name}
                     />
+                    <p className={styles.projectName}>{d.name}</p>
+                    <p className={styles.jobTitle}>{d.job}</p>
+                    <p className={styles.projectDesc}>{d.description}</p>
                   </Link>
-                </div>
-              )
-            })
-          }
+                )
+              })
+            }
+          </div>
         </div>
-        <Footer />
       </main>
     </>
   )

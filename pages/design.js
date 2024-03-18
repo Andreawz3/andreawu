@@ -22,12 +22,12 @@ export default function Project() {
         <NavBar />
         <div className={styles.container}>
           <div className={styles.subtitleContainer}>
-            <Image 
+            {/* <Image 
               src="/images/leaf-left.png"
               width={70}
               height={70}
               alt="portfolio-image"
-            />
+            /> */}
             <h1 className={styles.subtitle}>MOTION GRAPHICS</h1>
           </div>
           <p style={{width: "760px", textAlign: "center", margincontainer: "30px"}}>
@@ -51,12 +51,12 @@ export default function Project() {
         </div>
         <div className={styles.container}>
           <div className={styles.subtitleContainer}>
-            <Image 
+            {/* <Image 
               src="/images/leaf-left.png"
               width={70}
               height={70}
               alt="portfolio-image"
-            />
+            /> */}
             <h1 className={styles.subtitle}>GRAPHICS DESIGN</h1>
           </div>
           <div className={styles.designContainer}>

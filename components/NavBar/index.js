@@ -11,7 +11,7 @@ export default function NavBar() {
       <Link href={'/'}>
         <Image
           className={styles.logo}
-          src="/images/logo.png"
+          src="/images/logo01.png"
           width={200}
           height={200}
           alt="logo"

@@ -97,7 +97,6 @@
 .subContainer {
   max-width: 1140px;
   width: 100%;
-  /* position: relative; */
   margin-top: 50px;
   display: flex;
   flex-direction: column;
